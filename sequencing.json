@@ -41,8 +41,6 @@
       "apt-get -y install git perl default-jdk gcc",
       "apt-get -y install falcon",
       "apt-get -y install software-properties-common",
-      "apt-add-repository --yes --update ppa:ansible/ansible",
-      "apt-get -y install ansible",
       "apt-get -y install azure-cli",
       "apt-get -y install jq",
       "cd /tmp && wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh",
