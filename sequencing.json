@@ -15,7 +15,6 @@
     "client_secret":                    "{{user `secretKey`}}",
     "tenant_id":                        "{{user `tenantId`}}",
     "cloud_environment_name":           "{{user `cloud`}}",
-    "location":                         "{{user `location`}}",
     "build_resource_group_name":        "{{user `resourceGroup`}}",
     "managed_image_resource_group_name":"{{user `resourceGroup`}}", 
     "managed_image_name":               "Sequencing",
