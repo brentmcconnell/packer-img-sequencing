@@ -4,7 +4,8 @@
     "clientId":       "{{env `AZURE_CLIENTID`}}",
     "subscriptionId": "{{env `AZURE_SUBSCRIPTIONID`}}",
     "tenantId":       "{{env `AZURE_TENANTID`}}",
-    "resourceGroup":  "{{env `AZURE_RESOURCE_GROUP`}}"
+    "resourceGroup":  "{{env `AZURE_RESOURCE_GROUP`}}",
+    "version":        "{{env `VERSION`}}"
   },
   "builders": [{
     "type": "azure-arm",
@@ -15,7 +16,7 @@
     "cloud_environment_name":           "{{user `cloud`}}",
     "build_resource_group_name":        "{{user `resourceGroup`}}",
     "managed_image_resource_group_name":"{{user `resourceGroup`}}", 
-    "managed_image_name":               "Sequencing",
+    "managed_image_name":               "Sequencing-{{user `version`}}",
     "os_type":                          "Linux",
     "image_publisher":                  "Canonical",
     "image_offer":                      "UbuntuServer",
