@@ -4,7 +4,6 @@
     "clientId":       "{{env `AZURE_CLIENTID`}}",
     "subscriptionId": "{{env `AZURE_SUBSCRIPTIONID`}}",
     "tenantId":       "{{env `AZURE_TENANTID`}}",
-    "cloud":          "{{env `AZURE_CLOUD`}}",
     "resourceGroup":  "{{env `AZURE_RESOURCE_GROUP`}}"
   },
   "builders": [{
