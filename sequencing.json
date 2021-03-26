@@ -6,6 +6,7 @@
     "tenantId":       "{{env `AZURE_TENANTID`}}",
     "cloud":          "{{env `AZURE_CLOUD`}}",
     "location":       "{{env `AZURE_LOCATION`}}"
+    "resourceGroup":  "{{env `AZURE_RESOURCE_GROUP`}}"
   },
   "builders": [{
     "type": "azure-arm",
@@ -16,7 +17,7 @@
     "cloud_environment_name":   "{{user `cloud`}}",
     "location":                 "{{user `location`}}",
 
-    "managed_image_resource_group_name": "Images", 
+    "managed_image_resource_group_name": "{{user `resourceGroup`}}", 
     "managed_image_name": "Sequencing",
     "os_type": "Linux",
     "image_publisher": "Canonical",
