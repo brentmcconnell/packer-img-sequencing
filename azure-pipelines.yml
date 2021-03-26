@@ -6,6 +6,7 @@ variables:
 
 steps:
 - script: |
+    env
     packer build -force sequencing.json
   displayName: 'Execute Packer script for sequencing'
   env:
