@@ -15,11 +15,11 @@ steps:
     packer build -force sequencing.json
   displayName: 'Execute Packer script for sequencing'
   env:
-    AZURE_CLOUD: $(AZURE_CLOUD)
     AZURE_SECRET: $(SP-PASSWORD)
     AZURE_CLIENTID: $(SP-CLIENTID)
     AZURE_SUBSCRIPTIONID: $(SP-SUBSCRIPTIONID)
     AZURE_TENANTID: $(SP-TENANTID)
+    AZURE_CLOUD: $(AZURE_CLOUD)
     AZURE_LOCATION: $(AZURE_LOCATION)
     AZURE_RESOURCE_GROUP: $(AZURE_RESOURCE_GROUP)
     IMAGE_VERSION: $(runtime_vars.GIT_COMMIT)
