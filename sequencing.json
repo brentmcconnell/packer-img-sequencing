@@ -1,9 +1,9 @@
 {
   "variables": {
-    "secretKey":      "{{env `SP_PASSWORD`}}",
-    "clientId":       "{{env `SP_CLIENTID`}}",
-    "subscriptionId": "{{env `SP_SUBSCRIPTIONID`}}",
-    "tenantId":       "{{env `SP_TENANTID`}}",
+    "secretKey":      "{{env `SP-PASSWORD`}}",
+    "clientId":       "{{env `SP-CLIENTID`}}",
+    "subscriptionId": "{{env `SP-SUBSCRIPTIONID`}}",
+    "tenantId":       "{{env `SP-TENANTID`}}",
     "cloud":          "{{env `AZURE_CLOUD`}}",
     "location":       "{{env `AZURE_LOCATION`}}",
     "resourceGroup":  "{{env `AZURE_RESOURCE_GROUP`}}",
