@@ -15,7 +15,7 @@ steps:
     packer build -force sequencing.json
   displayName: 'Execute Packer script for sequencing'
   env:
-    AZURE_SECRET: $(SP-PASSWORD)
+    AZURE_PASSSWORD: $(SP-PASSWORD)
     AZURE_CLIENTID: $(SP-CLIENTID)
     AZURE_SUBSCRIPTIONID: $(SP-SUBSCRIPTIONID)
     AZURE_TENANTID: $(SP-TENANTID)
