@@ -7,7 +7,9 @@ variables:
 steps:
 - script: |
     GIT_COMMIT=$( git rev-parse --short HEAD )
+    DATE=$( date "+%m%d%y%M" )
     echo "##vso[task.setvariable variable=GIT_COMMIT;isOutput=true]$GIT_COMMIT"
+    echo "##vso[task.setvariable variable=DATE;isOutput=true]$DATE"
   name: runtime_vars
   displayName: 'Set runtime variables for pipeline'
 
@@ -22,6 +24,6 @@ steps:
     AZURE_CLOUD: $(AZURE_CLOUD)
     AZURE_LOCATION: $(AZURE_LOCATION)
     AZURE_RESOURCE_GROUP: $(AZURE_RESOURCE_GROUP)
-    IMAGE_VERSION: $(runtime_vars.GIT_COMMIT)
+    IMAGE_VERSION: $(runtime_vars.GIT_COMMIT)-$(runtime_vars.DATE)
 
 
