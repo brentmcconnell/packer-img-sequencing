@@ -7,9 +7,12 @@ variables:
 steps:
 - script: |
     GIT_COMMIT=$( git rev-parse --short HEAD )
-    DATE=$( date "+%m%d%y%M" )
+    DATE=$( date "+%m%d%y" )
+    HOUR=$( date "+%H" )
+    MINUTE=$( date "+%M" )
+    SECONDS=$(echo "$HOUR*60+$MINUTE"|bc)
     echo "##vso[task.setvariable variable=GIT_COMMIT;isOutput=true]$GIT_COMMIT"
-    echo "##vso[task.setvariable variable=DATE;isOutput=true]$DATE"
+    echo "##vso[task.setvariable variable=DATE;isOutput=true]${DATE}-${SECONDS}"
   name: runtime_vars
   displayName: 'Set runtime variables for pipeline'
 
