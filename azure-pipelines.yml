@@ -28,5 +28,3 @@ steps:
     AZURE_LOCATION: $(AZURE_LOCATION)
     AZURE_RESOURCE_GROUP: $(AZURE_RESOURCE_GROUP)
     IMAGE_VERSION: $(runtime_vars.GIT_COMMIT)-$(runtime_vars.DATE)
-
-
