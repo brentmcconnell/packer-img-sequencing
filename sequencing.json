@@ -49,7 +49,7 @@
       "cd /tmp && wget https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh",
       "sh Anaconda3-2020.02-Linux-x86_64.sh -b -p /opt/anaconda3 -f",
       "/opt/anaconda3/bin/conda install -y -c bioconda pb-assembly",
-      "/opt/anaconda3/bin/conda install -y -c bioconda trinity",
+      "/opt/anaconda3/bin/conda install -y -c bioconda/label/main trinity",
       "/opt/anaconda3/bin/conda install -y -c bioconda transdecoder",
       "chmod 755 -R /opt/anaconda3",
       "wget https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/2.10.8/setup-apt.sh",
